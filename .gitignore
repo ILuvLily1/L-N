@@ -38,6 +38,19 @@
 ehthumbs.db
 Thumbs.db
 
-# ZiON ignored files #
+# Dependencies #
 node_modules
+.pnp
+.pnp.js
+
+# Next.js #
+.next/
+out/
+
+# Build #
 temp
+dist
+build
+
+# Misc #
+*.tsbuildinfo
