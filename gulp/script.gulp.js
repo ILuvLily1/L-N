@@ -8,6 +8,7 @@ const replace = require("gulp-replace");
 const concat = require("gulp-concat");
 const clone = require("gulp-clone");
 const merge = require("merge-stream");
+const gulpIf = require("gulp-if");
 const webpackStream = require("webpack-stream");
 
 const {
@@ -48,9 +49,9 @@ gulp.task("script", () => {
   const jsStream = sourceStream
     .pipe(clone())
     .pipe(sourcemaps.init())
-    .pipe(eslint({ fix: true }))
-    .pipe(eslint.format())
-    .pipe(eslint.failAfterError())
+    .pipe(gulpIf(!isProd, eslint({ fix: true })))
+    .pipe(gulpIf(!isProd, eslint.format()))
+    .pipe(gulpIf(!isProd, eslint.failAfterError()))
     .pipe(concat("theme.js"))
     .pipe(replace(/^(export|import).*/gm, ""))
     .pipe(babel());
