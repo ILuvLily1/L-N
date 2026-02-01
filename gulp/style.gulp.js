@@ -13,6 +13,15 @@ const { paths, baseDir, browserSync } = require('./utils.js');
 const getOption = (outputStyle) => ({
   outputStyle,
   precision: 5, // rounding of css color values, etc..
+  silenceDeprecations: [
+    'legacy-js-api',
+    'import',
+    'if-function',
+    'color-functions',
+    'function-units',
+    'global-builtin',
+    'slash-div',
+  ],
 });
 
 /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

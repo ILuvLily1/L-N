@@ -5,7 +5,7 @@
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp",
-    "build": "cross-env MODE=PROD gulp build",
+    "build": "cross-env NODE_OPTIONS=--no-deprecation MODE=PROD gulp build",
     "build:test": "cross-env MODE=PROD gulp build:test",
     "live": "gulp compile:all && cross-env MODE=PROD gulp live",
     "publish": "git subtree push --prefix live origin gh-pages",
