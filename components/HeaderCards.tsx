@@ -1,16 +1,20 @@
 import Image from "next/image";
 import Link from "next/link";
 
+// Use exact filenames and encode for URL (Vercel/Linux is case-sensitive: .JPG not .jpg)
+const IMG_2713 = `/assets/img/dress/${encodeURIComponent("IMG_2713 (1).JPG")}`;
+const IMG_2712 = `/assets/img/dress/${encodeURIComponent("IMG_2712 (1).JPG")}`;
+
 export default function HeaderCards() {
   return (
     <section className="py-0" id="header" style={{ marginTop: "-23rem" }}>
       <div className="container">
         <div className="row g-0">
           <div className="col-md-6">
-            <div className="card card-span h-100 text-white">
+            {/* <div className="card card-span h-100 text-white">
               <Image
                 className="img-fluid"
-                src="/assets/img/dress/IMG_2713 (1).jpg"
+                src={IMG_2713}
                 width={790}
                 height={500}
                 alt="For Her"
@@ -26,13 +30,13 @@ export default function HeaderCards() {
             <div className="card card-span h-100 text-white">
               <Image
                 className="img-fluid"
-                src="/assets/img/dress/IMG_2712 (1).jpg"
+                src={IMG_2712}
                 width={790}
                 height={500}
                 alt=""
               />
               <div className="card-img-overlay d-flex flex-center" />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
