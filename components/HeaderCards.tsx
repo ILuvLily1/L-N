@@ -1,16 +1,16 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 
 export default function HeaderCards() {
   return (
-    <section className="py-0" id="header" style={{ marginTop: '-23rem' }}>
+    <section className="py-0" id="header" style={{ marginTop: "-23rem" }}>
       <div className="container">
         <div className="row g-0">
           <div className="col-md-6">
             <div className="card card-span h-100 text-white">
               <Image
                 className="img-fluid"
-                src="/assets/img/dress/A11.png"
+                src="/assets/img/dress/IMG_2713 (1).jpg"
                 width={790}
                 height={500}
                 alt="For Her"
@@ -26,7 +26,7 @@ export default function HeaderCards() {
             <div className="card card-span h-100 text-white">
               <Image
                 className="img-fluid"
-                src="/assets/img/dress/A11a.png"
+                src="/assets/img/dress/IMG_2712 (1).jpg"
                 width={790}
                 height={500}
                 alt=""
