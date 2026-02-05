@@ -11,7 +11,7 @@ export default function HeaderCards() {
       <div className="container">
         <div className="row g-0">
           <div className="col-md-6">
-            {/* <div className="card card-span h-100 text-white">
+            <div className="card card-span h-100 text-white">
               <Image
                 className="img-fluid"
                 src={IMG_2713}
@@ -36,7 +36,7 @@ export default function HeaderCards() {
                 alt=""
               />
               <div className="card-img-overlay d-flex flex-center" />
-            </div> */}
+            </div>
           </div>
         </div>
       </div>
