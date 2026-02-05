@@ -69,7 +69,7 @@ export default function BestDeals() {
             <h5 className="fw-bold fs-3 fs-lg-5 lh-sm">Best Deals</h5>
           </div>
           <div className="col-12">
-            <Carousel controls indicators={false} touch={false} interval={null}>
+            <Carousel controls={false} indicators={false} touch={false} interval={null}>
               <Carousel.Item>
                 <div className="row h-100 align-items-center g-2">
                   {deals.map((item, index) => (
